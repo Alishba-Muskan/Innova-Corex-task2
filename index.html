@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Drag and Drop Image Gallery Builder</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="center-screen">
+  <h1>🖼️ Click, Drag, and Explore Your Gallery</h1>
+
+  <label for="upload" class="custom-upload">📁 Upload Images</label>
+  <input type="file" id="upload" accept="image/jpeg, image/png" multiple />
+
+  <div class="drop-area" id="drop-area">
+    Drag & Drop Images Here
+  </div>
+
+  <div id="gallery"></div>
+
+  <div id="modal">
+    <span class="close">&times;</span>
+    <div class="modal-controls">
+      <span class="arrow" id="prev">&#8592;</span>
+      <span class="arrow" id="next">&#8594;</span>
+    </div>
+    <img id="modal-image" src="" alt="Full View" />
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
